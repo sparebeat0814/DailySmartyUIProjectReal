@@ -7,7 +7,7 @@ import Post from './post';
      
     renderPosts() {
         const post = this.props.posts.map((post, index) => {
-            return <Post key={index} {...post} />
+            return <Post type="result" key={index} {...post} />
         })
         return post
     }
